@@ -1,0 +1,352 @@
+<html><head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+		<!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telephone=no, email=no">
+		<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="portrait">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="portrait">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- <title>单身加班还打游戏的报应</title> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+		<!-- 百度统计开始 -->
+		<!-- <script type="text/javascript" async="" src="http://site.cdnmaster.cn/sitemaster/collect.js"></script><script src="//tag.cdnmaster.cn/tmjs/tm.js?id=TM-443110" async=""></script><script src="https://hm.baidu.com/hm.js?3f949350488adf0135922c2c47fd13e2"></script><script>
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "https://hm.baidu.com/hm.js?3f949350488adf0135922c2c47fd13e2";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+		</script> -->
+        <!-- 百度统计结束 -->
+        <style>
+        .animated2s{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated600{-webkit-animation-duration:0.6s;animation-duration:0.6s;-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}@-webkit-keyframes fadeIn{0%{opacity:1}50%{opacity:0}100%{opacity:1}}@keyframes fadeIn{0%{opacity:1}50%{opacity:0}100%{opacity:1}}.fadeIn{-webkit-animation-name:fadeIn;animation-name:fadeIn}@-webkit-keyframes pulse{from{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}50%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}to{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}@keyframes pulse{from{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}50%{-webkit-transform:scale3d(1.1, 1.1, 1.1);transform:scale3d(1.1, 1.1, 1.1)}to{-webkit-transform:scale3d(1, 1, 1);transform:scale3d(1, 1, 1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}html,body{width:100%;height:100%}.wrap{position:relative;width:100%;height:100%;left:0;top:0;background-color:#1d1b1c}.hide{display:none}.index{position:absolute;width:100%;height:100%;left:0;top:0;z-index:500;text-align:center;background-color:#1d1b1c;background-size:cover;-webkit-background-size:cover}.index .index-img-wrap{position:relative;width:0;height:11.9047619048rem;top:48%;left:50%;margin-top:-5.9523809524rem;margin-left:-19.6666666667rem;background:url(../images/index_word.png) 0 center no-repeat;background-size:39.3333333333rem 9.2857142857rem;-webkit-background-size:39.3333333333rem 9.2857142857rem}.index .index-img-wrap .index-img{width:100%;height:100%}.index .index-img-wrap .index-click{position:absolute;width:1.7619047619rem;height:1.7142857143rem;bottom:.1904761905rem;left:26.7619047619rem}.index .index-head{position:absolute;width:18.4761904762rem;top:0;left:10.4285714286rem}.index .index-icon{position:absolute;width:3.8571428571rem;bottom:3.5714285714%;right:3%}.index .index-progress{position:absolute;width:100%;height:2rem;color:#ffffff;font-size:1.3333333333rem;text-align:center;bottom:-2rem;left:0;top:50%;margin-top:6.1904761905rem}.video{position:absolute;width:100%;height:100%;left:0;top:0;z-index:99}.video video{width:100%;height:100%;object-fit:fill}.final{position:absolute;width:100%;height:100%;left:0;top:0;z-index:1000;background:url(../images/final_bg.jpg) center center no-repeat;background-size:auto 100%;-webkit-background-size:auto 100%}.final-bg{width:100%;height:100%}.final .final-btns{position:absolute;width:100%;height:16%;left:0;bottom:4%;text-align:center;margin-left:-2%}.final .final-btns>div{width:45%;height:100%}.final .final-btns>div:nth-child(1){float:left}.final .final-btns>div:nth-child(2){float:right}.final .final-btns img{position:relative}.final .final-btns img:nth-child(1){margin-right:2.380952381rem;max-height:100%;max-width:45%}.final .final-btns img:nth-child(2){top:.9523809524rem;max-height:90%;max-width:45%}.share{position:absolute;width:100%;height:100%;left:0;top:0;z-index:10001;background-color:rgba(0,0,0,0.7)}.share img{position:absolute;height:41%;top:2%;right:1.9047619048rem}.share .share-img-portrait{display:none;right:0;left:1.9047619048rem}@media all and (orientation: portrait){.wrap>div{left:100%;transform:rotate(90deg);-webkit-transform:rotate(90deg);transform-origin:0 0;-webkit-transform-origin:0 0}.wrap .share .share-img-portrait{display:inline-block}.wrap .share .share-img{display:none}}
+        </style>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="index" style="width: 100%; height: 100%;">
+				<div class="index-img-wrap" style="width: 39.3333rem;">
+					<!--<img src="images/index_img.png" alt="" class="index-img" />-->
+					<img src="images/index_head.png" alt="" class="index-head hide" style="display: inline; opacity: 1;">
+					<img src="images/index_click.png" class="index-click animated fadeIn infinite">
+					
+				</div>
+				<div class="index-progress" style="display: none;">100%</div>
+				<img src="images/icon_index_bottom.png" alt="" class="index-icon">
+			</div>
+			<div class="video" style="width: 100%; height: 100%;">
+				<video id="video" width="100%" height="100%"  type="video/mp4" preload="" x5-video-player-type="h5" src="./../../web/static/src/jebsen.mp4"></video>
+			</div>
+			<div class="final hide" style="width: 100%; height: 100%;">
+				<!--<div class="bg-color"></div>-->
+				<!--<img src="images/final_bg2.jpg" alt="" class="final-bg" />-->
+				<div class="final-btns">
+					<!--<div class="btn-again"></div>
+					<div class="btn-share"></div>-->
+					<img src="images/btn_again.png" alt="" class="btn-again animated infinite pulse">
+					<img src="images/btn_share.png" alt="" class="btn-share animated infinite pulse">
+				</div>
+			</div>
+			<div class="share hide" style="width: 100%; height: 100%;">
+				<img class="share-img" src="images/share.png">
+				<img class="share-img-portrait" src="images/share_portrait.png">
+			</div>
+		</div>
+		<script src="./../../web/static/js/jquery.js"></script>
+		<!-- <script src="js/jweixin-1.0.0.js"></script> -->
+		<script type="text/javascript">
+			function setBlob(){
+				function t() {
+					function t() {
+						o.pause(), o.removeEventListener("playing", t)
+					}
+					function i() {
+						n(s), e(l), p && (clearTimeout(p), p = null)
+					}
+					function a(e) {
+						var n = e.buffered.length > 0 ? e.buffered.end(0) : 0;
+						return n = parseInt(1e3 * n + 1) / 1e3
+					}
+					function d() {
+						var e = a(o),
+							n = o.duration; + new Date - c > u || e >= n || y === e ? i() : (y = e, p = setTimeout(function() {
+							d()
+						}, 500))
+					}
+					o.src = r;
+					var c = +new Date,
+						u = 4e3,
+						p = null;
+					o.play(), o.addEventListener("playing", t);
+					var y = -1;
+					d()
+				}
+			
+				var i = document.getElementById.bind(document),
+				o = i("video"),
+				r = "./../../web/static/src/jebsen.mp4";
+				var c = new XMLHttpRequest;
+				c.open("GET", r, !0), c.responseType = "blob", c.onload = function() 
+				{
+					if (200 === this.status && "video/mp4" === this.response.type) {
+					var i = this.response,
+						a = (window.URL || window.webkitURL || window || {}).createObjectURL(i);
+						o.src = a;
+						
+						//load end
+						loadEnd();
+					} else t()
+				}
+				c.onerror = function(e) {
+					t();
+				}
+				c.send();
+			}
+		</script>
+		<script type="text/javascript">
+			var video,
+				u = navigator.userAgent,
+				loadTimer;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+			
+			$(function(){
+				
+				//loading动画
+				$(".index-img-wrap").animate({
+					width:"39.3333333333rem"
+				},4000);
+				
+				var progress = 0,
+						$progress = $(".index-progress");
+					loadTimer = setInterval(function(){
+						progress += (Math.random() > 0.5 ? 1 : 2);
+						if(progress > 99){
+							clearInterval(loadTimer);
+						}else{
+							$progress.text(progress + "%");
+						}
+					},100);
+				
+				//切换视频流
+				if(isAndroid){
+					
+					setBlob();
+				}else{
+					setTimeout(function(){
+						loadEnd();
+					},4000);
+				}
+				
+				
+				
+				var ww = window.innerWidth,
+					wh = window.innerHeight;
+					
+				//初始化
+				if(wh > ww){
+					//以竖屏方式进入
+					$(".wrap >div").css({
+						width:(wh + 1) + "px",
+						height:ww + "px"
+					});
+				}
+				
+					
+				
+				video = document.getElementById('video');
+				
+				listenVideo();
+				
+				$(".index").on("click",function(){
+					_smq.push(['custom','honor1111_WAP','ClicktoseeKevin']);
+					$(this).addClass('hide');
+					video.play();
+//					WeixinJSBridge.call('hideOptionMenu');
+//					wx.hideOptionMenu();
+				});
+				
+				$(".btn-share").on("click",function(){
+					_smq.push(['custom','honor1111_WAP','MorePeople']);
+					$(".share").removeClass('hide');
+				});
+				
+				$(".btn-again").on("click",function(){
+					_smq.push(['custom','honor1111_WAP','ChangeDesign']);
+					window.location.href = 'http://mp.weixin.qq.com/s?__biz=MjM5MDcxNzkyMA==&mid=520123515&idx=1&sn=0028a991ba4bf087869872811b3e6e2d&chksm=3cb456f40bc3dfe283a8b71d5e5bc0db5d98c67a46bdc7a14ad30b35deb578124d46ef3a2d06#rd';
+				});
+				
+				$(".share").on("click",function(){
+					$(this).addClass('hide');
+				});
+				
+				//旋转屏幕
+				var landTimer;
+				window.addEventListener('orientationchange',function(res){
+					//以竖屏方式进入
+					if(wh >ww){
+						//切换成横屏
+						if(!isPortrait()){
+
+							$(".wrap >div").css({
+								width:"100%",
+								height:"100%"
+							});
+							if(isAndroid){
+								$(".video").css({
+									width:wh + "px",
+									height:ww + "px"
+								});
+							}
+						}else{
+							//切成竖屏
+							$(".wrap >div").css({
+								width:(wh + 1) + "px",
+								height:ww + "px"
+							});
+						}
+					//横屏进入页面
+					}else{
+						//切换成竖屏
+						if(isPortrait()){
+							var landIndex = 0;
+							clearInterval(landTimer);
+							landTimer = setInterval(function(){
+								//检测旋转猴，轮询宽高值
+								if(landIndex++ <= 10){
+									//直到获取的宽度小于高度后重置宽高
+									if(window.innerWidth < window.innerHeight){
+										 $(".wrap >div").css({
+											width:(window.innerHeight + 1) + "px",
+											height:window.innerWidth + "px"
+										});
+										clearInterval(landTimer);
+									}
+								}else{
+									clearInterval(landTimer);
+								}
+							},150);
+						}else{
+							//换回横屏
+							$(".wrap >div").css({
+								width:"100%",
+								height:"100%"
+							});
+						}
+					}
+				});
+			});
+			
+			function listenVideo(){
+				video.onended = function(){
+					$(".video").addClass('hide');
+					video.currentTime = 0;
+					$(".final").removeClass('hide');
+					
+					if(isAndroid){
+						var _setIndex = 0,
+							setFinal = setInterval(function(){
+								if(_setIndex++ <= 10){
+									//视频播放完后把被视频干扰的页面宽高修正回来
+									if(!isPortrait()){
+										$(".final,.share,.index").css({
+											width:"100%",
+											height:"100%"
+										});
+										clearInterval(setFinal);
+									}
+							}else{
+								clearInterval(setFinal);
+							}
+						},150);
+					}
+					
+//					 WeixinJSBridge.call('showOptionMenu');
+//					 wx.showOptionMenu();
+				}
+			}
+			
+			//旋转角度
+			function isPortrait(){
+				return (window.orientation == 0 || window.orientation == 180) ? true : false;
+			}
+			
+			//加载解析完毕
+			function loadEnd(){
+				clearInterval(loadTimer);
+				$(".index-img-wrap").animate({
+						width:"39.3333333333rem"
+					},100);
+				$(".index-progress").text("100%");
+				$(".index-head").fadeIn();
+				setTimeout(function(){
+					$(".index-click").removeClass('hide');
+					$(".index-progress").hide();
+				},600);
+			}
+
+			//share
+			$.getJSON('http://xmz.m-ke.cn/jssdk/wxsdk.php?callback=?',{"method":"getsp","cdns":1,"url":location.href.split('#')[0]},function(json){
+			    //自动encodeURIComponent
+			    wx.config({
+			        debug: false,
+			        appId: json.appId,
+			        timestamp: json.timestamp,
+			        nonceStr: json.nonceStr,
+			        signature: json.signature,
+			        jsApiList: [
+			            'onMenuShareTimeline',
+			            'onMenuShareAppMessage',
+			        ]
+			    });
+			});
+
+			// function share_act() {
+			//     // 监听“分享给朋友”
+			//     wx.onMenuShareAppMessage({
+			//         title: '这可能就是单身加班还打游戏的报应......',
+			//         desc: '莫生气.......',
+			//         link: location.href,
+			//         imgUrl: 'http://honor.wechat.sh.cn/01/icon.jpg',
+			//         success: function(res) {
+			//         },
+			//     });
+			//     // 监听“分享到朋友圈”
+			//     wx.onMenuShareTimeline({
+			//         title: '这可能就是单身加班还打游戏的报应......',
+			//         link: location.href,
+			//         imgUrl: 'http://honor.wechat.sh.cn/01/icon.jpg',
+			//         success: function(res) {
+			//         },
+			//     });
+			// }
+
+			// wx.ready(function() {
+			//     share_act();
+			// });
+		</script>
+		<script>!(function(a,b,c,d,e,f){var g="",h=a.sessionStorage,i="__admaster_ta_param__",j="tmDataLayer"!==d?"&dl="+d:"";
+		if(a[f]={},a[d]=a[d]||[],a[d].push({startTime:+new Date,event:"tm.js"}),h){var k=a.location.search,
+		l=new RegExp("[?&]"+i+"=(.*?)(&|#|$)").exec(k)||[];l[1]&&h.setItem(i,l[1]),l=h.getItem(i),
+		l&&(g="&p="+l+"&t="+ +new Date)}var m=b.createElement(c),n=b.getElementsByTagName(c)[0];m.src="//tag.cdnmaster.cn/tmjs/tm.js?id="+e+j+g,
+		m.async=!0,n.parentNode.insertBefore(m,n)})(window,document,"script","tmDataLayer","TM-443110","admaster_tm");
+		</script>
+	
+
+<script type="text/javascript" id="">var _smq = _smq || []; _smq.push(['_setAccount', '2392d4b', new Date()]); _smq.push(['pageview']); (function() { var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true; sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'site.cdnmaster.cn/sitemaster/collect.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s); })(); </script></body></html>

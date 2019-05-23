@@ -1,0 +1,72 @@
+//定义基础颜色,基础样式,字体大小
+@fontColor:#4C4C4C; //字体颜色
+@mainColor:#41719C;//主色调
+@firstPage:#004182;
+@borderColor:#515151;//主要border颜色
+@bottomBorderColor:#BFBFBF;//底部border顔色
+@progressColor:#2F8DE3;//进度条颜色
+@headBGColor:#E6EAF4;//头部背景色
+@lotteryCoverColor:#EBEBEB;//刮刮卡覆盖层
+@lv1:@mainColor;
+@lv2:#4F81B0;
+@lv3:#5F9CD4;
+@lv4:#79B5EB;
+@lv5:#A9CEEF;
+@formtheme:#515151;
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Microsoft YaHei';
+    font-size: 62.5%;
+    color: @fontColor;
+    
+}
+
+body{
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color: @fontColor;
+}
+
+ul,ol{
+    list-style: none
+}
+.lf{
+    float: left
+}
+
+.rf{
+    float: right;
+}
+
+.clear::after,.clear::before{
+    content: '';
+    display: block;
+    clear: both;
+}

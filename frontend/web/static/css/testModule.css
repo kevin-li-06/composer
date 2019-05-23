@@ -1,0 +1,337 @@
+body {
+    background: black;
+    width: 100%;
+    height: 100%;
+    font-family: "黑体";
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.slide-container {
+    max-width: 513px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+}
+
+#slidesHome {
+    display: block;
+}
+
+.slide>.img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.nextBtn,
+#testBtn {
+    position: absolute;
+    left: 47%;
+}
+
+.nextBtn>.glyphicon {
+    width: 35px;
+    font-size: 35px;
+    height: 35px;
+    color: #fff;
+}
+
+.nextBtn {
+    bottom: 2rem;
+    /* transition: move 1.5s infinite linear; */
+    /* -webkit-animation: move 1.5s infinite linear; */
+}
+
+#testBtn {
+    bottom: 48%;
+}
+
+.answerSelected {
+    color: red;
+}
+
+@-moz-keyframes move {
+    0% {
+        bottom: 2rem;
+    }
+    50% {
+        bottom: 3rem;
+    }
+    100% {
+        bottom: 2rem;
+    }
+}
+
+@keyframes move {
+    0% {
+        bottom: 2rem;
+    }
+    50% {
+        bottom: 3rem;
+    }
+    100% {
+        bottom: 2rem;
+    }
+}
+
+
+/*page2*/
+
+#optionsDiv {}
+
+.keyOption {
+    position: absolute;
+    display: inline-block;
+}
+
+#free {
+    width: 15.6rem;
+    height: 19.8rem;
+    top: 6.5rem;
+    left: 2.5rem;
+}
+
+#sexy {
+    width: 12.95rem;
+    height: 15.45rem;
+    top: 4.8rem;
+    right: 4rem;
+}
+
+#sporty {
+    width: 12.95rem;
+    height: 15.45rem;
+    top: 32rem;
+    left: 1rem;
+}
+
+#smart {
+    width: 21.05rem;
+    height: 25.85rem;
+    top: 21.5rem;
+    right: 1.8rem;
+}
+
+#cute {
+    width: 8.7rem;
+    height: 11rem;
+    top: 47.5rem;
+    right: 1.6rem;
+}
+
+#free>.answer {
+    width: 6.5rem;
+    height: 2.5rem;
+}
+
+#sexy>.answer {
+    width: 7rem;
+    height: 3.5rem;
+}
+
+#sporty>.answer {
+    width: 7.8rem;
+    height: 2.8rem;
+}
+
+#smart>.answer {
+    width: 8.1rem;
+    height: 2.35rem;
+}
+
+#cute>.answer {
+    width: 4.3rem;
+    height: 1.7rem;
+}
+
+.keyOption>img {
+    width: 100%;
+    height: auto;
+}
+
+.optionsDiv:hover,
+.keyAnswerSelected {
+    opacity: 0.8;
+}
+
+
+/*question  start*/
+
+.qustioBox {
+    padding: 0 15% 0 18%;
+    position: relative;
+    top: 21.5rem;
+    color: #f09ca0;
+}
+
+.qustioBox>p {
+    font-size: 1.4rem;
+    padding: 0.6rem 0;
+}
+
+.answerDiv {
+    margin-top: 1rem;
+}
+
+.answer {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+
+/*Q2*/
+
+#qustionGroup2 {
+    padding: 0 16% 0 19%;
+    position: relative;
+    top: 15.5rem;
+}
+
+#qustionGroup2>p {
+    font-size: 1.35rem;
+}
+
+#answerDiv2 {
+    margin-top: -0.5rem;
+}
+
+#answerDiv2>.answer {
+    width: 50%;
+    float: left;
+    height: 18.5rem;
+    padding-right: 2.5rem;
+    font-size: 1.45rem;
+}
+
+#answerDiv2>.answer>p {
+    margin-top: 1.4rem;
+}
+
+
+/*Q3*/
+
+#qustionGroup3 {
+    padding: 0 8% 0 14%;
+    position: relative;
+    top: 14rem;
+}
+
+#qustionGroup3>p {
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+    padding: 0.2rem 0;
+}
+
+#answerDiv3 {
+    margin-top: 1.4rem;
+}
+
+#answerDiv3>.answer {
+    width: 50%;
+    position: relative;
+    float: left;
+    font-size: 1.5rem;
+}
+
+#answerDiv3>:nth-child(1) {
+    height: 19rem;
+}
+
+#answerDiv3>:nth-child(2) {
+    height: 20rem;
+    top: 3.5rem;
+}
+
+#answerDiv3>:nth-child(3) {
+    height: 19.3rem;
+    top: -2.2rem;
+}
+
+#answerDiv3>:nth-child(3)>img {
+    width: 98%;
+}
+
+#answerDiv3>.answer>p {
+    margin-top: 1.2rem;
+}
+
+
+/*Q4*/
+
+#qustionGroup4 {
+    padding: 0 10% 0 17%;
+    position: relative;
+    top: 13rem;
+}
+
+#qustionGroup4>p {
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+#answerDiv4 {
+    margin-top: 0rem;
+}
+
+#answerDiv4>.answer {
+    width: 50%;
+    float: left;
+    padding-right: 1rem;
+}
+
+#answerDiv4>.answer>p {
+    margin-top: 2rem;
+}
+
+#answerDiv4>:nth-child(1) {
+    height: 21rem;
+}
+
+#answerDiv4>:nth-child(2) {
+    height: 20.5rem;
+    margin-top: 7.7rem;
+}
+
+#answerDiv4>:nth-child(3) {
+    height: 22rem;
+    margin-top: -7.5rem;
+}
+
+#qustionSubmit {
+    color: white;
+    border: 1px solid white;
+    padding: 2px 3px;
+}
+
+
+/*question  start*/
+
+
+/**/
+
+#tranSubmit {
+    width: 18.9rem;
+    height: 7.35rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -9.5rem;
+    top: 33rem;
+}
+
+#bottomImg {
+    position: absolute;
+    top: 44rem;
+}

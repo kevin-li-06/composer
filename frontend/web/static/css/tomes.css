@@ -1,0 +1,978 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: '黑体';
+    font-size: 62.5%;
+    color: #4C4C4C;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+img {
+    border: none;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+p,
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.clear::after,
+.clear::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#myWarp {
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+
+/* 刮刮卡 */
+
+.lottery {
+    padding-top: 20px;
+    background: #f19aa0;
+}
+
+.lotteryBox {
+    width: 20.3rem;
+    margin: 0 auto;
+}
+
+#con {
+    height: 4.2rem;
+    width: 100%;
+    position: relative;
+    background: #EBEBEB;
+}
+
+#c1 {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80%;
+    position: relative;
+    z-index: 1;
+}
+
+.noChance::before,
+.disableAppointment::before,
+.isRedeem::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.disableAppointment::after {
+    content: '已停止刮奖';
+    display: inline-block;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    color: #fff;
+}
+
+.noChance::after {
+    content: '今日次数用光了';
+    display: inline-block;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    color: #fff;
+}
+
+.isRedeem::after {
+    content: '您已经领取了奖品';
+    display: inline-block;
+    height: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 12;
+    color: #fff;
+}
+
+.lotteryMsg {
+    width: 20.3rem;
+    margin: 1rem auto .5rem;
+    text-align: center;
+    position: relative;
+    color: #000;
+}
+
+i.icon::after {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 100% 100%;
+}
+
+.remainingTimes {
+    width: 7.3rem;
+    padding-left: 0.4rem;
+    line-height: 1.2;
+    margin-top: 0.5rem;
+}
+
+
+/*.remainingTimes i:after {
+    padding: .8rem 1rem;
+    background-image: url('../img/coupon.png');
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+    z-index: -1;
+}*/
+
+.remainingTimes>.lf {
+    font-size: .8rem;
+    text-align: left;
+}
+
+.oneMore {
+    width: 5.55rem;
+    background-color: #00ffff;
+    color: #01060B;
+    padding: .4rem 0 .3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.yourGift {
+    width: 7.4rem;
+    padding: .5rem 0 .5rem .5rem;
+    cursor: pointer;
+    font-size: 1.05rem;
+}
+
+.yourGift i:after {
+    padding: 1rem .875rem;
+    background-image: url('../img/P10_header.png');
+}
+
+.giftPrompt {
+    padding: .5rem 0 0.9rem;
+    text-align: center;
+    color: #000;
+    font-size: .9rem;
+}
+
+.prize {
+    display: none;
+    position: relative;
+}
+
+.prize>div:nth-child(1) {
+    background-color: #41719C;
+}
+
+.prize>div:nth-child(2) {
+    background-color: #4F81B0;
+}
+
+.prize>div:nth-child(3) {
+    background-color: #5F9CD4;
+}
+
+.prize>div:nth-child(4) {
+    background-color: #79B5EB;
+}
+
+.prize>div:nth-child(5) {
+    background-color: #A9CEEF;
+}
+
+#storeMsg {
+    padding: 0.9rem 1.8rem;
+    background-color: rgb(241, 154, 160);
+    color: #fff;
+    height: 13rem;
+}
+
+#storeMsg div {
+    margin: 0 auto;
+    font-size: 1.05rem;
+    width: 80%;
+}
+
+#storeMsg .storeMsgUser {
+    font-size: 1rem;
+    padding-bottom: 1.2rem;
+    padding-top: 0.8rem;
+}
+
+#storeMsg .storeMsgStoreName b,
+#storeMsg .storeMsgStoreAddress b {
+    font-weight: 600;
+}
+
+#storeMsg .storeMsgDate {
+    color: #2F8DE3;
+}
+
+.storeMsg .prince {
+    color: #00ffff;
+    text-align: right;
+    font-size: 1rem;
+}
+
+.prize.icon::before {
+    content: '';
+    display: inline-block;
+    border: 2.2rem solid transparent;
+    border-bottom: 2.2rem solid #41719C;
+    position: absolute;
+    top: -4rem;
+    right: 19%;
+}
+
+.card {
+    background: black;
+    height: 12.7rem;
+}
+
+.card .cardImg {
+    width: 15rem;
+    padding: 1.8rem 0;
+}
+
+.card .cardImg img {
+    display: block;
+    max-width: 9.2rem;
+    margin-left: 3.5rem;
+}
+
+.listGift {
+    width: 8rem;
+    height: 6.15rem;
+    background: url("../img/P11-list2.png");
+    background-size: 100% 100%;
+    float: left;
+    margin-top: 1rem;
+    position: relative;
+    top: 1.6rem;
+}
+
+.card .cardDesc {
+    width: 59.5%;
+    padding: 2rem 2.5rem 1.6rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.card .cardDesc.center {}
+
+.card .cardDescHead {
+    padding: .8rem;
+    font-size: 1.7rem;
+    color: #f09ca0;
+    top: 6rem;
+    position: relative;
+}
+
+.card .cardDescBody {
+    padding: .6rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.card .cardDescFoot {
+    /*lisa*/
+    text-align: center;
+}
+
+.cardDescFoot .signbtn {
+    /*gai613*/
+    width: 17.3rem;
+    height: 2rem;
+    color: #0ff;
+    font-size: 1.2rem;
+    padding: 0.35rem 0rem;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    background: #f09ca0;
+    border: none;
+    border-radius: 0.4rem;
+    letter-spacing: 0.3em;
+    margin-left: -2.3rem;
+    position: relative;
+    top: -7.4rem;
+}
+
+.card .cardDescFoot .pried {
+    float: none;
+}
+
+.card .prizedHead {
+    padding: .5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.card .prizedBody {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.card .prizedFoot .pried {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+}
+
+.formdiv {
+    padding: 6.8rem 6rem;
+    color: #fbf9f9;
+    background: rgba(241, 154, 160, 1) url(../img/P11-listBack.png) no-repeat center center;
+    background-size: 100%;
+    display: none;
+    height: 40rem;
+}
+
+.peizeform {
+    padding: 1.6rem 1rem 0 0.5rem;
+}
+
+.formdiv h2 {
+    font-size: 1.45rem;
+    text-indent: 1.5em;
+}
+
+.formdiv .prizelabel {
+    height: 2.9rem;
+    font-size: 1.2rem;
+    padding: 1rem 0 0.5rem;
+}
+
+.formdiv .sms {
+    margin: 1.5rem 0 1rem;
+}
+
+.formdiv .prizeInput {
+    width: 100%;
+    height: 3rem;
+    padding: .5rem;
+    text-indent: 1rem;
+    border: none;
+    color: #4a4848;
+}
+
+.formdiv .storeSelect {
+    position: relative;
+}
+
+.formdiv .storeItem {
+    width: 7.6rem;
+    height: 3rem;
+    background: #fff;
+    border: 0.1rem solid #515151;
+    cursor: pointer;
+    overflow: auto;
+    outline: none;
+}
+
+.formdiv .storeItem .active {
+    background: #BFBFBF;
+}
+
+.formdiv .list2 {
+    margin-left: .6rem;
+    width: 7.6rem;
+}
+
+.formdiv .list3 {
+    margin-left: .6rem;
+    width: 13.8rem;
+}
+
+.formdiv .conAgree {
+    color: #9f9b9a;
+    padding: 3.5rem 0 2.5rem;
+}
+
+.formdiv .conAgree input {
+    border: 1px solid #9f9b9a;
+}
+
+.formdiv .userMsgBtn {
+    width: 10rem;
+    margin-top: 3rem;
+    border: none;
+    font-size: 1.6rem;
+    color: #7a7070;
+}
+
+.formdiv .prince {
+    color: #5F9CD4;
+    cursor: pointer;
+}
+
+.formdiv .err {
+    border-color: #a94442;
+}
+
+
+/* lisa 结束*/
+
+
+/*奖品设置*/
+
+#prizeList {
+    display: none;
+    padding: 1rem 5% 2rem;
+}
+
+.prizeListTitle {
+    font-size: 1.6rem;
+    padding: 1.5rem 1rem 2.5rem;
+    font-weight: 600;
+}
+
+.prizeListul {
+    width: 100%;
+}
+
+.prizeListul .prizeListLI {
+    width: 33%;
+    text-align: center;
+    float: left;
+    margin-bottom: 1rem;
+    color: #555555;
+}
+
+.prizeListul .imgDiv {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 0;
+}
+
+.prizeListul .imgDiv img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.prizeListul .imgDiv~div {
+    padding: .1rem;
+    font-size: 1.1rem;
+}
+
+.prizeListul .prizeRemain {
+    color: #BFBFBF;
+    font-size: 1rem!important;
+}
+
+
+/*#prizeList2 */
+
+.list2_box {
+    position: relative;
+    width: 100%;
+    height: 9rem;
+    padding: 0 .9rem 0 1.3rem;
+}
+
+#prizeList2>.list2_box:nth-child(1) {
+    background-color: rgb(2, 85, 137);
+}
+
+#prizeList2>.list2_box:nth-child(2) {
+    background-color: rgb(55, 180, 172);
+}
+
+#prizeList2>.list2_box:nth-child(3) {
+    background-color: rgb(247, 184, 151);
+}
+
+.list2_box .tag {
+    width: 6.4rem;
+    height: 3.25rem;
+    position: absolute;
+    background-size: 100% 100%;
+    top: -3rem;
+}
+
+.imgsBox {
+    width: 35rem;
+    margin: 0 auto;
+}
+
+.logosImg {
+    width: 25.95rem;
+    height: 9.1rem;
+}
+
+.productImg {
+    width: 8rem;
+    height: 8rem;
+}
+
+.list2_box img {
+    display: inline-block;
+}
+
+.list2_box img {
+    background-size: 100% 100%;
+}
+
+.tag1 {
+    background-image: url('../img/P10_prize1.png');
+    right: 1rem;
+}
+
+.tag2 {
+    background-image: url('../img/P10_prize2.png');
+    left: 1rem;
+}
+
+.tag3 {
+    background-image: url('../img/P10_prize3.png');
+    right: 1rem;
+}
+
+.logosImg1 {
+    background-image: url('../img/P10_prized1.png');
+}
+
+.logosImg2 {
+    background-image: url('../img/P10_prized2.png');
+}
+
+.logosImg3 {
+    background-image: url('../img/P10_prized3.png');
+}
+
+.productImg1 {
+    background-image: url('../img/P10-prizeImg1.png');
+}
+
+.productImg2 {
+    background-image: url('../img/P10-prizeImg2.png');
+}
+
+.productImg3 {
+    background-image: url('../img/P10-prizeImg3.png');
+}
+
+
+/* lisa   end*/
+
+.firstLoading .content {
+    background: #004182 url('../img/logo-01.png') no-repeat center 22%;
+    background-size: 17rem;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+}
+
+.firstLoading .firstClose {
+    width: auto;
+    text-shadow: none;
+    float: right;
+    margin: 1rem 2rem 0 0;
+    position: relative;
+}
+
+.firstLoading .firstClose span {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.firstLoading .firstClose i.icon {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: .8rem solid transparent;
+    border-left: .8rem solid #fff;
+    position: absolute;
+    top: 0;
+    right: -2rem;
+}
+
+.firstLoading .videoPercent {
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.firstLoading .videoLoading {
+    font-size: 0;
+}
+
+.firstLoading .videoLoading li {
+    margin: 1.8rem auto 0;
+    width: 0;
+    border: .2rem solid #fff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 3;
+}
+
+.firstLoading .videoLoading li i {
+    width: .8rem;
+    height: .8rem;
+    display: block;
+    border: 0.2rem solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    position: absolute;
+    top: -0.4rem;
+    left: -0.4rem;
+    z-index: 2;
+}
+
+.firstLoading .videoLoading li .animations {
+    animation: li1 1000ms linear infinite;
+}
+
+.firstLoading .videoLoading li b {
+    width: 1.2rem;
+    height: 1.2rem;
+    display: block;
+    border: 0.2rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: -0.6rem;
+    left: -0.6rem;
+    z-index: 1;
+}
+
+.firstLoading .videoLoading li:nth-child(2) i,
+.firstLoading .videoLoading li:nth-child(2) b {
+    animation-delay: 333ms;
+}
+
+.firstLoading .videoLoading li:nth-child(3) i,
+.firstLoading .videoLoading li:nth-child(3) b {
+    animation-delay: 666ms;
+}
+
+.firstLoading .videoStart {
+    margin: 1.8rem auto 0;
+}
+
+.firstLoading .videoStart i {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 0.4rem;
+}
+
+.firstLoading .videoStart i::after {
+    content: '';
+    display: block;
+    border: .7rem solid transparent;
+    border-left: .7rem solid #fff;
+    position: absolute;
+    top: .2rem;
+    left: 0.7rem;
+}
+
+.page2 {
+    background: #ddd url("../img/page2.jpg") no-repeat 0 0;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99999;
+}
+
+.page2 .replay {
+    position: absolute;
+    top: 77%;
+    left: 34%;
+    width: 36%;
+    height: 5%;
+    line-height: 1.2;
+    font-size: .9rem;
+    padding: .8rem 0;
+    text-align: center;
+    color: #004182;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.page2 .replay i {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("../img/replay.png") no-repeat 0 0;
+    background-size: 100% 100%;
+}
+
+.page2 .toLottery {
+    position: absolute;
+    top: 82.5%;
+    left: 27%;
+    width: 48.5%;
+    height: 6%;
+    text-align: center;
+    color: #004182;
+    font-size: 1.7rem;
+    border: 0.1rem solid #004182;
+    border-radius: .5rem;
+    padding: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page2 .share {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    font-size: .9rem;
+}
+
+.page2 .share::before {
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("../img/c_down.png") no-repeat 0 0.3rem;
+    background-size: 100% 100%;
+}
+
+.page2 .share::after {
+    content: '';
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: url("../img/c_up.png") no-repeat 0 0.3rem;
+    background-size: 100% 100%;
+}
+
+.full {
+    height: 100%;
+    overflow: hidden;
+}
+
+@media screen and (orientation: landscape) {
+    .firstLoading .content {
+        background: #004182 url('../img/logo-01.png') no-repeat center 3%;
+        background-size: 13rem;
+    }
+    .firstLoading .rotate {
+        width: 100%;
+        height: 100%;
+        transform-origin: 0 0;
+        transform: rotate(0deg);
+        margin-left: 0;
+    }
+    .firstLoading #myVideo {
+        width: 100%;
+    }
+    .firstLoading .videoPercent {
+        top: 60%;
+    }
+    .firstLoading .videoPercentI {
+        margin-left: 12%;
+    }
+    .firstLoading .videoLoading {
+        position: absolute;
+        top: 11%;
+        left: 40%;
+    }
+    .firstLoading .videoLoading li {
+        float: left;
+        margin: 0 1.8rem 0 0;
+    }
+    .firstLoading .videoStart {
+        font-size: 1.5rem;
+        margin: 1.8rem auto 0;
+    }
+    .firstLoading .videoStart i {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .firstLoading .videoStart i::after {
+        border: .5rem solid transparent;
+        border-left: .5rem solid #fff;
+        top: .2rem;
+        left: 0.5rem;
+    }
+    .page2 {
+        background: #ddd url("../img/page2_h.jpg") no-repeat 0 0;
+        background-size: 100% 100%;
+    }
+    .page2 .replay {
+        position: absolute;
+        top: 68%;
+        left: 40%;
+        width: 20%;
+    }
+    .page2 .toLottery {
+        top: 76%;
+        left: 36.5%;
+        width: 27%;
+        height: 11%;
+        padding: 1.3rem 0;
+    }
+    .page2 .share {
+        width: 48%;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+@keyframes li1 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* 核销 */
+
+.redeem .content {
+    min-height: 20rem;
+    height: 35%;
+}
+
+.redeem .modalHead {
+    height: 25%;
+    margin-bottom: 2rem;
+    background-color: #00ffff;
+}
+
+.redeem .modalHead h3 {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    top: 1rem;
+}
+
+.redeem .modalConfirm {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.redeem .redeemConfirmBtn {
+    background-color: #EBEBEB;
+    color: #41719C;
+    padding: 0.5rem 3rem;
+    border: 1px solid #41719C;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}
+
+.redeem #redeemMsg {
+    padding: .5rem;
+}
+
+
+/*分享回调弹窗*/
+
+.shareMsg .content {
+    min-height: 15rem;
+    height: 25%;
+}
+
+.shareMsg .modalHead {
+    height: 30%;
+    margin-bottom: 2rem;
+}
+
+.shareMsg .modalHead h3 {
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.shareMsg .shareStatus {
+    font-size: 1.8rem;
+}
+
+.shareMsg .modalConfirm {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 1rem;
+}
+
+.shareMsg .shareMsgBtn {
+    background-color: #EBEBEB;
+    color: #41719C;
+    padding: 0.5rem 3rem;
+    border: 1px solid #41719C;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+}

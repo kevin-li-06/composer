@@ -1,0 +1,1 @@
+INSERT INTO `store` (id, zh_storename, en_storename, store_code, province, city, address, status, phone, dyson, tool, cup, startcoffe, rag, magnet) VALUES (37, "上海东方商厦杨浦店", "SH Oriental Department Store(Yangpu)", "DSH405", "9", "73", "上海市-上海市四平路2500号B1", 1, "021-23164724", 0, 0, 0, 0, 0, 0);

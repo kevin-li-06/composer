@@ -1,0 +1,88 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Access Token Controller",
+        "description": "this is API description",
+        "version": "1.0"
+    },
+    "paths": {
+        "/hk-lottery/frontend/web/index.php/site/signup": {
+            "post": {
+                "tags": [
+                    "Signup/Get"
+                ],
+                "summary": "signup",
+                "operationId": "frontend\\controllers\\SiteController::actionSignup",
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "query",
+                        "description": "Psername values that needed to be considered for filter",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "admin@xgate.com"
+                                ]
+                            },
+                            "default": "admin@xgate.com"
+                        }
+                    },
+                    {
+                        "name": "password",
+                        "in": "query",
+                        "description": "Password values that needed to be considered for filter",
+                        "required": true,
+                        "explode": true,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "xg1234"
+                                ]
+                            },
+                            "default": "xg1234"
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                "properties": {
+                                    "username": {
+                                        "type": "string"
+                                    },
+                                    "password": {
+                                        "type": "string"
+                                    },
+                                    "account_id": {
+                                        "type": "string"
+                                    }
+                                },
+                                "type": "object",
+                                "example": {
+                                    "username": "admin@xgate.com",
+                                    "password": "xg1234",
+                                    "account_id": "demo"
+                                }
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "success"
+                    },
+                    "400": {
+                        "description": "Invalid ID supplied"
+                    }
+                }
+            }
+        }
+    }
+}

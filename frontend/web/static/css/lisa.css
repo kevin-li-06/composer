@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Microsoft YaHei';
+    font-size: 62.5%;
+    color: #4C4C4C;
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: .1rem;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+p,
+pre {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #4C4C4C;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.lf {
+    float: left;
+}
+
+.rf {
+    float: right;
+}
+
+.clear::after,
+.clear::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.bg-modal {
+    top: 0%;
+    left: 0%;
+    display: none;
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalHead {
+    background-color: #A9CEEF;
+    height: 45%;
+}
+
+.sign {
+    display: block;
+}
+
+.sign .modalHead {
+    background: #00ffff;
+    background-size: auto auto;
+    background-size: 80% 80%;
+    height: 11rem;
+}
+
+.modalHead .modalHeadImg {
+    width: 8.95rem;
+    height: 7.65rem;
+    background: url("../img/P10_header8.png") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 50%;
+    margin-left: -4.5rem;
+    top: 1.5rem;
+}
+
+.content {
+    position: relative;
+    width: 65%;
+    height: 13rem;
+    min-height: 21rem;
+    left: 17.5%;
+    top: 16.5rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.close {
+    display: block;
+    width: 1.6rem;
+    height: 1.65rem;
+    background-image: url("../img/P10_close.png");
+    background-size: 100%;
+    position: absolute;
+    right: 1.5rem;
+    top: 0.5rem;
+    z-index: 10;
+    opacity: 1;
+}
+
+.modalFoot {
+    text-align: center;
+    margin-top: 0.9rem;
+}
+
+.modalFoot p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.2rem 0 0;
+    letter-spacing: .1rem;
+    color: #f49c9b;
+}
+
+.signInlist {
+    width: 50%;
+    margin: .5rem auto;
+}
+
+.signInlist li {
+    text-align: center;
+    width: 2rem;
+    float: left;
+    border: 1px solid #BFBFBF;
+    border-radius: 50%;
+    margin: .2rem;
+    padding: .38rem;
+    position: relative;
+    height: 2rem;
+}
+
+.signInlist li.active {
+    color: #000;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 0;
+    border: none;
+}
+
+.signInlist .active:nth-child(1) {
+    background-image: url("../img/P10_header1.png");
+}
+
+.signInlist .active:nth-child(2) {
+    background-image: url("../img/P10_header2.png");
+}
+
+.signInlist .active:nth-child(3) {
+    background-image: url("../img/P10_header3.png");
+}
+
+.signInlist .active:nth-child(4) {
+    background-image: url("../img/P10_header4.png");
+}
+
+.signInlist .active:nth-child(5) {
+    background-image: url("../img/P10_header5.png");
+}
+
+.signInDays {
+    margin-bottom: .5rem;
+    position: relative;
+    color: #BFBFBF;
+    display: none;
+}
+
+#signInBtn {
+    background-color: #f19aa0;
+    border: 1px solid #f19aa0;
+    color: #01080F;
+    padding: .1rem 1.3rem;
+    font-size: 1rem;
+}
+
+
+/* 弹框结束  */
+
+
+/*  签到进度开始  */
+
+#header {
+    background: #000;
+    padding: 3rem 0 6rem 0;
+    height: 20rem;
+    font-family: 'SourceHanSansCN-Regular';
+}
+
+.headL {
+    width: 13.3rem;
+    height: 17rem;
+    position: relative;
+}
+
+.headR {
+    width: 24rem;
+    height: 100%;
+}
+
+.header_title {
+    padding-top: 1rem;
+    position: relative;
+    text-align: left;
+}
+
+.header_title h1 {
+    font-size: 1.4rem;
+    color: #f09ca0;
+    margin-top: 2rem;
+}
+
+.header_title .gift {
+    position: absolute;
+    width: 8.15rem;
+    height: 10.35rem;
+    background: url("../img/P10_header6.png");
+    background-size: contain;
+    right: -0.2rem;
+    top: -6.2rem;
+}
+
+.sign-progress {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+}
+
+.header_img {
+    width: 8.75rem;
+    height: 8.75rem;
+    background-image: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 3.1rem;
+    margin-top: 1rem;
+    background-color: #fff;
+}
+
+.header_img2 {
+    width: 9.65rem;
+    height: 4.85rem;
+    background-image: url("../img/P10_header7.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 1.2rem;
+}
+
+.sign-progress p {
+    margin-top: 0.8rem;
+    font-size: 0;
+}
+
+.sign-progress .circle {
+    text-align: center;
+    display: inline-block;
+    width: 3.8rem;
+    height: 3.8rem;
+    padding: 1.3rem;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #a2a2a2;
+    z-index: 2;
+    font-size: 1.9rem;
+    position: relative;
+    margin-right: 0.4rem;
+}
+
+.sign-progress .live-circle {
+    color: #000;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.sign-progress .live-circle:nth-child(1) {
+    background-image: url("../img/P10_header1.png");
+}
+
+.sign-progress .live-circle:nth-child(2) {
+    background-image: url("../img/P10_header2.png");
+}
+
+.sign-progress .live-circle:nth-child(3) {
+    background-image: url("../img/P10_header3.png");
+}
+
+.sign-progress .live-circle:nth-child(4) {
+    background-image: url("../img/P10_header4.png");
+}
+
+.sign-progress .live-circle:nth-child(5) {
+    background-image: url("../img/P10_header5.png");
+}
+
+.signBox {
+    padding-top: 1rem;
+}
+
+.btnp {
+    width: 10.2rem;
+    padding-top: 0.3rem;
+}
+
+.signbtn {
+    width: 9.6rem;
+    height: 3.2rem;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 0.65rem 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
+
+#signbutton {
+    display: block;
+    width: 9.6rem;
+    height: 3.2rem;
+    background-image: url("../img/P10_sign.png");
+    background-size: 100% 100%;
+    font-size: 1.45rem;
+}
+
+.sign-desc {
+    height: 4rem;
+    float: left;
+    width: 11rem;
+    font-size: .83rem;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #f09ca0;
+    line-height: 1.2;
+}
+
+.sign-desc span {
+    color: #f09ca0;
+}
+
+.wechatMsg {
+    display: none;
+}
+
+
+/*   签到进度结束  */
+
+
+/* lisa added by 2017/11/21  start*/
+
+
+/*私人政策  条款及细则start*/
+
+.policy-clause .content {
+    width: 80%;
+    height: auto;
+    left: 10%;
+    top: 10%;
+    overflow-y: scroll;
+    color: #444;
+}
+
+.policy-clause .modalHead {
+    height: 4rem;
+}
+
+.policy-clause .modalHead h3 {
+    font-size: 1.5rem;
+    margin: 0px auto 3px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    top: 1.2rem;
+}
+
+.policy-clause .modalFoot {
+    text-align: left;
+    padding: 15px;
+}
+
+.policy-clause .modalFoot>p {
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-indent: 2em;
+}
+
+.policy-clause .pol-list li {
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.policy-clause .pol-list>li>ul>li {
+    padding: 0.2rem 0;
+    font-weight: 500;
+}
+
+.policy-clause .pol-list>li>ul>li>p {
+    padding: 0.3rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.policy-clause .modalConfirm {
+    height: 4rem;
+    background: #A9CEEF;
+}
+
+.policy-clause .bg-modal-ok {
+    width: 7.2rem;
+    margin: 0 auto;
+    height: 2.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 0.4rem 1.1rem;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 1.25rem;
+    position: relative;
+    top: 0.75rem;
+}
+
+.policy-clause .bg-modal-ok:hover {
+    background: #79B5EB;
+}
+
+.prizeListTitle .clause {
+    color: #41719C;
+    float: right;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.pol-list li {
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+
+/*私人政策 end*/
+
+
+/* lisa added by 2017/11/21  end*/

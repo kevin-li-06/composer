@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Microsoft YaHei';
+  font-size: 62.5%;
+  color: #4C4C4C;
+}
+body {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: .1rem;
+}
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+dl,
+dt,
+dd,
+p,
+pre {
+  margin: 0;
+  padding: 0;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #4C4C4C;
+}
+ul,
+ol {
+  list-style: none;
+}
+.lf {
+  float: left;
+}
+.rf {
+  float: right;
+}
+.clear::after,
+.clear::before {
+  content: '';
+  display: block;
+  clear: both;
+}
